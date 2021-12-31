@@ -664,11 +664,11 @@ class HostWindow(QMainWindow):
         self.hide()
 
     def showIfNeeded(self):
-        if self.host.nsmOK:
-            self.ui.act_file_quit.setText(self.tr("Hide"))
-            QApplication.instance().setQuitOnLastWindowClosed(False)
-        else:
-            self.show()
+        #if self.host.nsmOK:
+        #    self.ui.act_file_quit.setText(self.tr("Hide"))
+        #    QApplication.instance().setQuitOnLastWindowClosed(False)
+        #else:
+        self.show()
 
     # --------------------------------------------------------------------------------------------------------
     # Setup
