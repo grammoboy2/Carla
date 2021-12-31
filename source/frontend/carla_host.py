@@ -668,6 +668,7 @@ class HostWindow(QMainWindow):
         #    self.ui.act_file_quit.setText(self.tr("Hide"))
         #    QApplication.instance().setQuitOnLastWindowClosed(False)
         #else:
+        QApplication.instance().setQuitOnLastWindowClosed(False)
         self.show()
 
     # --------------------------------------------------------------------------------------------------------
