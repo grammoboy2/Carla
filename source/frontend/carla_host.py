@@ -663,12 +663,14 @@ class HostWindow(QMainWindow):
             pitem.getWidget().hideCustomUI()
         self.hide()
 
-    def showIfNeeded(self):
+    # Grammo hack to enable visible gui at launch for NSM.
+    def showIfNeeded(self):  
         #if self.host.nsmOK:
         #    self.ui.act_file_quit.setText(self.tr("Hide"))
         #    QApplication.instance().setQuitOnLastWindowClosed(False)
         #else:
-        QApplication.instance().setQuitOnLastWindowClosed(False)
+        if self.host.nsmOK:
+            QApplication.instance().setQuitOnLastWindowClosed(False)
         self.show()
 
     # --------------------------------------------------------------------------------------------------------
