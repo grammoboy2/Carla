@@ -239,7 +239,9 @@ protected:
             if (fHasOptionalGui)
             {
                 // NOTE: lo_send_from is a macro that creates local variables
-                lo_send_from(fReplyAddress, fServer, LO_TT_IMMEDIATE, "/nsm/client/gui_is_hidden", "");
+                //lo_send_from(fReplyAddress, fServer, LO_TT_IMMEDIATE, "/nsm/client/gui_is_hidden", "");
+				lo_send_from(fReplyAddress, fServer, LO_TT_IMMEDIATE, "/nsm/client/gui_is_shown", "");
+
             }
 
             carla_stdout("Carla started via '%s', message: %s", smName, message);
