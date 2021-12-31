@@ -1,0 +1,4 @@
+NSM show gui commits:
+
+https://github.com/falkTX/Carla/commit/a1501e46bfd80521bb43cffc483d0f72d532d16b
+https://github.com/falkTX/Carla/commit/e0519f98a1e007ab6ad38d7c9e07c82190f2b7f1
