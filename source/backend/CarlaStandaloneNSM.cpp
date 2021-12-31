@@ -240,6 +240,7 @@ protected:
             {
                 // NOTE: lo_send_from is a macro that creates local variables
                 //lo_send_from(fReplyAddress, fServer, LO_TT_IMMEDIATE, "/nsm/client/gui_is_hidden", "");
+				// Grammo hack: 
 				lo_send_from(fReplyAddress, fServer, LO_TT_IMMEDIATE, "/nsm/client/gui_is_shown", "");
 
             }
