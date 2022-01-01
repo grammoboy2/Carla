@@ -670,6 +670,7 @@ class HostWindow(QMainWindow):
         #    QApplication.instance().setQuitOnLastWindowClosed(False)
         #else:
         if self.host.nsmOK:
+            self.ui.act_file_quit.setText(self.tr("Hide"))
             QApplication.instance().setQuitOnLastWindowClosed(False)
         self.show()
 
